@@ -24,7 +24,7 @@ function App() {
         <div className="APP">
             <div class="row">
                 <div class="col-md-9">
-                    <h1>Welcome to Our Bakery</h1> {/* TODO: personalize your bakery (if you want) */}
+                    <h1>Welcome to Our Bakery~</h1> {/* TODO: personalize your bakery (if you want) */}
                     {/* set each line has three columns */}
                     <div class="row">
                         {bakeryData.map((item, index) => (
@@ -43,7 +43,8 @@ function App() {
                     <div>
                         <h2>Cart</h2>
                         {/* TODO: render a list of items in the cart */}
-                        {(cart.length === 0) ? <h5>empty</h5> : <div>
+                        {(cart.length === 0) ? <h5>No Items Added Yet</h5> : 
+                        <div>
                             <ul class="list-group">
                                 {cart.map((item, index) => (
                                     <li class="list-group-item" key={index}>
